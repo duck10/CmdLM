@@ -24,7 +24,8 @@ descriptions in many different basic forms.
 CmdLM is a single purpose program. Input consists  
 of a series of single line inputs, one for each  
 input unit cell. The first input cell is treated as 
-a reference to which the following cells will be   
+a  
+reference to which the following cells will be   
 "matched". Here, "matched" means that the cells are  
 similar; note that similar does not mean matching  
 in scale. All face-centered cubic unit cells are  
@@ -36,6 +37,7 @@ non-reference cells, a search is made among many
 representations to find one that matches closely  
 to the reference cell.
 	
+## Input and output:  
 Output consists of one line for each input cell.  
 The cells are output in the space G6, and each  
 line is ended with an angular measure of fit, in  
@@ -49,15 +51,17 @@ invalid, it is rejected with a message. Input type
 must appear in the first column of an input line.  
 Blank lines are ignored.
 
-	_g_ for G6 vectors
-	_s_ for S6, Delone/Selling scalars
-	_C3_ for C input (without parentheses or commas, “C” would be interpreted as a C-centered unit cell)
-	_U_ for DC7 unsorted
-	_RANDOM_: Random (valid) unit cell generated
-	Crystal lattice input: “A”, “B”, “C”, “P”, “R”, “H”,“F”, “I”  
-	followed by three axis lengths and three angles (in degrees)
-	_semicolon_: lines beginning with a semicolon are treated as comments
-	_END_: ends the data input section
+        **g** for G6 vectors
+        **s** for S6, Delone/Selling scalars  
+        **C3** for C input (without parentheses or commas,  
+            “C” would be interpreted as a C-centered unit cell)
+        **U** for DC7 unsorted
+        **RANDOM**: Random (valid) unit cell generated  
+        Crystal lattice input: “A”, “B”, “C”, “P”, “R”, “H”,“F”, “I”  
+            followed by three axis lengths and three angles (in degrees)  
+        **semicolon**: lines beginning with a semicolon  
+            are treated as comments
+        **END**: ends the data input section
 
 ## Build:
 All of LatticeRepLib is written in C++. As of 2023,  
@@ -118,7 +122,7 @@ Examples of unit cell inputs
 ## Building CmdLM
 
 The source code for CmdLM is located at:  
- https://github.com/duck10/CmdLM.
+ https://github.com/duck10/CmdLM.  
 The function main is located in the file CmdLM.cpp.  
 There are 83 source files (as of 2023/02/07).  
 Project files for Visual Studio 2022 are also  
