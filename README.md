@@ -51,7 +51,7 @@ invalid, it is rejected with a message. Input type
 must appear in the first column of an input line.  
 Blank lines are ignored.
 
-        **g** for G6 vectors
+**g** for G6 vectors
         **s** for S6, Delone/Selling scalars  
         **C3** for C input (without parentheses or commas,  
             “C” would be interpreted as a C-centered unit cell)
